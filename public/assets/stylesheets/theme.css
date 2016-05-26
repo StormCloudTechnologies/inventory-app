@@ -108,7 +108,7 @@ a:active {
 	position: fixed;
 	right: 0;
 	top: 0;
-	width: 300px;
+	width: 200px;
 }
 
 /* Layout Base - Sidebar Right Opened ( Larger than mobile ) */
@@ -526,7 +526,7 @@ a:active {
 		left: 0;
 		position: absolute;
 		top: 54px;
-		width: 300px;
+		width: 200px;
 	}
 
 	html.scroll .content-with-menu:after,
@@ -654,11 +654,11 @@ a:active {
 	html.fixed .inner-menu {
 		bottom: 0;
 		display: block;
-		left: 300px;
+		left: 200px;
 		position: fixed;
 		margin: 0;
 		top: 114px;
-		width: 300px;
+		width: 200px;
 		padding: 35px;
 		z-index: 1002;
 	}
@@ -707,7 +707,7 @@ a:active {
 		display: block;
 		position: relative;
 		margin: 0;
-		width: 300px;
+		width: 200px;
 		padding: 35px;
 	}
 
@@ -1676,7 +1676,7 @@ html.header-dark .header .input-search .input-group-btn .btn-default {
 	}
 
 	html.sidebar-left-collapsed .sidebar-left .nano:hover {
-		width: 300px;
+		width: 200px;
 	}
 
 	html.sidebar-left-collapsed .sidebar-left .nano:hover .nav-main .nav-expanded > ul.nav-children {
@@ -1697,7 +1697,7 @@ html.header-dark .header .input-search .input-group-btn .btn-default {
 	}
 
 	html.sidebar-left-collapsed.sidebar-left-opened .sidebar-left .nano {
-		width: 300px;
+		width: 200px;
 	}
 
 	html.sidebar-left-collapsed.sidebar-left-opened .sidebar-left .nano .nav-main .nav-expanded > ul.nav-children {
