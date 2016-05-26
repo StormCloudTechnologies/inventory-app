@@ -1,0 +1,275 @@
+<!doctype html>
+<html class="fixed">
+	
+
+<head>
+
+		<!-- Basic -->
+		<meta charset="UTF-8">
+
+		<title>Dashboard | Porto Admin - Responsive HTML5 Template 1.5.2</title>
+		<meta name="keywords" content="HTML5 Admin Template" />
+		<meta name="description" content="Porto Admin - Responsive HTML5 Template">
+		<meta name="author" content="okler.net">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<!-- Web Fonts  -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="bower_components/themify-icons/themify-icons.css">
+		<link rel="stylesheet" href="bower_components/flag-icon-css/css/flag-icon.min.css">
+		<link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+		<link rel="stylesheet" href="bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css">
+		<link rel="stylesheet" href="bower_components/switchery/dist/switchery.min.css">
+		<link rel="stylesheet" href="bower_components/seiyria-bootstrap-slider/dist/css/bootstrap-slider.min.css">
+		<link rel="stylesheet" href="bower_components/ladda/dist/ladda-themeless.min.css">
+		<link rel="stylesheet" href="bower_components/slick.js/slick/slick.css">
+		<link rel="stylesheet" href="bower_components/slick.js/slick/slick-theme.css">
+		<!-- end: MAIN CSS -->
+		<!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
+		<!-- end: CSS REQUIRED FOR THIS PAGE ONLY -->
+		<!-- start: Packet CSS -->
+		<link rel="stylesheet" href="assets/css/styles.css">
+		<link rel="stylesheet" href="assets/css/plugins.css">
+		<link rel="stylesheet" href="assets/css/themes/lyt4-theme-1.css" id="skin_color">
+
+		<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.css" />
+		<link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.css" />
+		<link rel="stylesheet" href="assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.css" />
+
+		<!-- Specific Page Vendor CSS --><link rel="stylesheet" href="assets/vendor/jquery-ui/jquery-ui.css" />		<link rel="stylesheet" href="assets/vendor/jquery-ui/jquery-ui.theme.css" />		<link rel="stylesheet" href="assets/vendor/bootstrap-multiselect/bootstrap-multiselect.css" />		<link rel="stylesheet" href="assets/vendor/morris.js/morris.css" />
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="assets/stylesheets/theme.css" />
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="assets/stylesheets/theme-custom.css">
+
+		<!-- Head Libs -->
+		<script src="assets/vendor/modernizr/modernizr.js"></script>		
+		<script src="assets/vendor/style-switcher/style.switcher.localstorage.js"></script>
+
+	</head>
+	<body>
+		<section class="body">
+
+
+			<div class="inner-wrapper">
+				<!-- start: sidebar -->
+				<aside id="sidebar-left" class="sidebar-left navtop">
+				
+					<div class="sidebar-header hidden-xs ">
+						<div class="sidebar-title">
+							Navigation
+						</div>
+						<div class="sidebar-toggle">
+							<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+						</div>
+					</div>
+				
+					<div class="nano">
+						<div class="nano-content">
+							<nav id="menu" class="nav-main" role="navigation">
+								<ul class="nav nav-main">
+									<li>
+										<a href="home.html">
+											<i class="fa fa-home" aria-hidden="true"></i>
+											<span>Dashboard</span>
+										</a>
+									</li>
+									<li>
+										<a href="adduser.html">
+											<i class="fa fa-user-plus" aria-hidden="true"></i>
+											<span>Add Users</span>
+										</a>
+									</li>
+									<li>
+										<a href="adduser.html">
+											<i class="fa fa-user" aria-hidden="true"></i>
+											<span>Add Users</span>
+										</a>
+									</li>
+									<li class="nav-active">
+										<a href="createproject.html">
+											<i class="fa fa-plus" aria-hidden="true"></i>
+											<span>Add Stock</span>
+										</a>
+									</li>
+									<li>
+										<a href="product.html">
+											<i class="fa fa-tasks" aria-hidden="true"></i>
+											<span>Stock List</span>
+										</a>
+									</li>
+									<li>
+										<a href="sold.html">
+											<i class="fa fa-list-alt" aria-hidden="true"></i>
+											<span>Sold Stock List</span>
+										</a>
+									</li>
+									<li>
+										<a href="sell.html">
+											<i class="fa fa-flag-o" aria-hidden="true"></i>
+											<span>Sales Reports</span>
+										</a>
+									</li>
+									<li>
+										<a href="cart.html">
+											<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+											<span>Cart</span>
+										</a>
+									</li>
+									<li>
+										<a href="outstock.html">
+											<i class="fa fa-outdent" aria-hidden="true"></i>
+											<span>Out Of Stock List</span>
+										</a>
+									</li>
+
+									<li>
+										<a href="index.html">
+											<i class="fa fa-power-off" aria-hidden="true"></i>
+											<span>Logout</span>
+										</a>
+									</li>
+									
+								</ul>
+							</nav>
+						</div>
+					
+						<script>
+							// Preserve Scroll Position
+							if (typeof localStorage !== 'undefined') {
+								if (localStorage.getItem('sidebar-left-position') !== null) {
+									var initialPosition = localStorage.getItem('sidebar-left-position'),
+										sidebarLeft = document.querySelector('#sidebar-left .nano-content');
+									
+									sidebarLeft.scrollTop = initialPosition;
+								}
+							}
+						</script>
+				
+					</div>
+				
+				</aside>
+				<!-- end: sidebar -->
+
+				<section role="main" class="content-body">
+					<header class="page-header"  style="top: 0 !important;">
+						<h2>Add Stock</h2>
+						<div class="right-wrapper pull-right visible-xs rightmenu">
+							<div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
+								<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+							</div>
+						</div>
+					</header>
+					<header class="panel-heading">
+						<h2 class="panel-title">Add Stock</h2>
+					</header>
+
+
+					<div class="panel-body" style="background: white;">
+						
+					<div class="l-box-body l-spaced">
+		                <div class="l-box">
+		                    <div class="l-box-body l-spaced">
+		                      <form id="validateDefault" role="form" class="form-horizontal validate">
+		                        <div class="form-group">
+		                          <label for="firstname" class="col-sm-3 control-label">Name</label>
+		                          <div class="col-sm-6">
+		                            <input  type="text" name="Title" placeholder="Name" class="form-control">
+		                          </div>
+		                          <div class="col-sm-3"></div>
+		                        </div>
+		                        <div class="form-group">
+		                          <label for="firstname" class="col-sm-3 control-label">Brand</label>
+		                          <div class="col-sm-6">
+		                            <input type="text" name="Title" placeholder="Brand" class="form-control">
+		                          </div>
+		                          <div class="col-sm-3"></div>
+		                        </div>
+		                        <div class="form-group">
+		                          <label for="firstname" class="col-sm-3 control-label">Size</label>
+		                          <div class="col-sm-6">
+		                            <select class="form-control">
+										<option>1</option>
+										<option>5</option>
+										<option>10</option>
+									</select>
+		                          </div>
+		                          <div class="col-sm-3"></div>
+		                        </div>
+		                        <div class="form-group">
+		                          <label for="firstname" class="col-sm-3 control-label">Color</label>
+		                          <div class="col-sm-6">
+		                            <input type="text" name="Title" placeholder="Brand" class="form-control">
+		                          </div>
+		                          <div class="col-sm-3"></div>
+		                        </div>
+		                        <div class="form-group">
+		                          <label for="firstname" class="col-sm-3 control-label">Type</label>
+		                          <div class="col-sm-6">
+		                            <select class="form-control">
+										<option>1</option>
+										<option>5</option>
+										<option>10</option>
+									</select>
+		                          </div>
+		                          <div class="col-sm-3"></div>
+		                        </div>
+		                        <div class="form-group">
+		                          <label for="firstname" class="col-sm-3 control-label">Bar Code</label>
+		                          <div class="col-sm-6">
+		                            <input type="password" name="Title" placeholder="Bar Code" class="form-control">
+		                          </div>
+		                          <div class="col-sm-3"></div>
+		                        </div>
+		                        <div class="form-group">
+		                          <label for="firstname" class="col-sm-3 control-label">Quantity</label>
+		                          <div class="col-sm-6">
+		                            <input type="number" name="Title" placeholder="Quantity" class="form-control">
+		                          </div>
+		                          <div class="col-sm-3"></div>
+		                        </div>
+		                      </form>
+		                     </div>
+			            </div>
+			            <br/>
+			            <div class="row">
+			            	<div class="col-sm-7"></div>
+			            	<div class="col-sm-5">
+				             <button type="button" data-dismiss="modal" class="btn btn-danger btn-md">Close</button>
+				             <button type="button" ng-click="AddPost(post)" class="btn 	btn-success btn-md">Submit</button>
+				            </div>
+			             </div>
+		              </div>
+					</div>
+					
+				</section>
+			</div>
+		</section>
+
+		<!-- Vendor -->
+		<script src="assets/vendor/jquery/jquery.js"></script>		<script src="assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>		<script src="assets/vendor/jquery-cookie/jquery-cookie.js"></script>		<script src="assets/vendor/style-switcher/style.switcher.js"></script>		<script src="assets/vendor/bootstrap/js/bootstrap.js"></script>		<script src="assets/vendor/nanoscroller/nanoscroller.js"></script>		<script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>		<script src="assets/vendor/magnific-popup/jquery.magnific-popup.js"></script>		<script src="assets/vendor/jquery-placeholder/jquery-placeholder.js"></script>
+		
+		<!-- Specific Page Vendor -->		<script src="assets/vendor/jquery-ui/jquery-ui.js"></script>		<script src="assets/vendor/jqueryui-touch-punch/jqueryui-touch-punch.js"></script>		<script src="assets/vendor/jquery-appear/jquery-appear.js"></script>		<script src="assets/vendor/bootstrap-multiselect/bootstrap-multiselect.js"></script>		<script src="assets/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.js"></script>		<script src="assets/vendor/flot/jquery.flot.js"></script>		<script src="assets/vendor/flot.tooltip/flot.tooltip.js"></script>		<script src="assets/vendor/flot/jquery.flot.pie.js"></script>		<script src="assets/vendor/flot/jquery.flot.categories.js"></script>		<script src="assets/vendor/flot/jquery.flot.resize.js"></script>		<script src="assets/vendor/jquery-sparkline/jquery-sparkline.js"></script>		<script src="assets/vendor/raphael/raphael.js"></script>		<script src="assets/vendor/morris.js/morris.js"></script>		<script src="assets/vendor/gauge/gauge.js"></script>		<script src="assets/vendor/snap.svg/snap.svg.js"></script>		<script src="assets/vendor/liquid-meter/liquid.meter.js"></script>		<script src="assets/vendor/jqvmap/jquery.vmap.js"></script>		<script src="assets/vendor/jqvmap/data/jquery.vmap.sampledata.js"></script>		<script src="assets/vendor/jqvmap/maps/jquery.vmap.world.js"></script>		<script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.africa.js"></script>		<script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.asia.js"></script>		<script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.australia.js"></script>		<script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.europe.js"></script>		<script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.north-america.js"></script>		<script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.south-america.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="assets/javascripts/theme.js"></script>
+		
+		<!-- Theme Custom -->
+		<script src="assets/javascripts/theme.custom.js"></script>
+		
+		<!-- Theme Initialization Files -->
+		<script src="assets/javascripts/theme.init.js"></script>
+		<!-- Analytics to Track Preview Website -->		<script>		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)		  })(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');		  ga('create', 'UA-42715764-8', 'auto');		  ga('send', 'pageview');		</script>
+		<!-- Examples -->
+		<script src="assets/javascripts/dashboard/examples.dashboard.js"></script>
+	</body>
+
+<!-- Mirrored from preview.oklerthemes.com/porto-admin/1.5.2/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 25 May 2016 07:08:48 GMT -->
+</html>

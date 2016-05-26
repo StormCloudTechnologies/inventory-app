@@ -1,0 +1,320 @@
+<!doctype html>
+<html class="fixed">
+	
+
+<head>
+
+		<!-- Basic -->
+		<meta charset="UTF-8">
+
+		<title>Dashboard | Porto Admin - Responsive HTML5 Template 1.5.2</title>
+		<meta name="keywords" content="HTML5 Admin Template" />
+		<meta name="description" content="Porto Admin - Responsive HTML5 Template">
+		<meta name="author" content="okler.net">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<!-- Web Fonts  -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css" />
+
+		<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.css" />
+		<link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.css" />
+		<link rel="stylesheet" href="assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.css" />
+
+		<!-- Specific Page Vendor CSS -->		<link rel="stylesheet" href="assets/vendor/jquery-ui/jquery-ui.css" />		<link rel="stylesheet" href="assets/vendor/jquery-ui/jquery-ui.theme.css" />		<link rel="stylesheet" href="assets/vendor/bootstrap-multiselect/bootstrap-multiselect.css" />		<link rel="stylesheet" href="assets/vendor/morris.js/morris.css" />
+
+		<link rel="stylesheet" href="assets/bootstrap-colorpicker.css">
+		<script src="assets/bootstrap-colorpicker.js"></script>
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="assets/stylesheets/theme.css" />
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="assets/stylesheets/theme-custom.css">
+
+		<!-- Head Libs -->
+		<script src="assets/vendor/modernizr/modernizr.js"></script>		
+		<script src="assets/vendor/style-switcher/style.switcher.localstorage.js"></script>
+
+	</head>
+	<body>
+		<section class="body">
+
+
+			<div class="inner-wrapper">
+				<!-- start: sidebar -->
+				<aside id="sidebar-left" class="sidebar-left navtop">
+				
+					<div class="sidebar-header hidden-xs ">
+						<div class="sidebar-title">
+							Navigation
+						</div>
+						<div class="sidebar-toggle">
+							<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+						</div>
+					</div>
+				
+					<div class="nano">
+						<div class="nano-content">
+							<nav id="menu" class="nav-main" role="navigation">
+								<ul class="nav nav-main">
+									<li class="nav-active">
+										<a href="home.html">
+											<i class="fa fa-home" aria-hidden="true"></i>
+											<span>Dashboard</span>
+										</a>
+									</li>
+									<li>
+										<a href="adduser.html">
+											<i class="fa fa-user-plus" aria-hidden="true"></i>
+											<span>Add Users</span>
+										</a>
+									</li>
+									<li>
+										<a href="user.html">
+											<i class="fa fa-user" aria-hidden="true"></i>
+											<span>Users</span>
+										</a>
+									</li>
+									<li>
+										<a href="createproject.html">
+											<i class="fa fa-plus" aria-hidden="true"></i>
+											<span>Add Stock</span>
+										</a>
+									</li>
+									<li>
+										<a href="product.html">
+											<i class="fa fa-tasks" aria-hidden="true"></i>
+											<span>Stock List</span>
+										</a>
+									</li>
+									<li>
+										<a href="sold.html">
+											<i class="fa fa-list-alt" aria-hidden="true"></i>
+											<span>Sold Stock List</span>
+										</a>
+									</li>
+									<li>
+										<a href="sell.html">
+											<i class="fa fa-flag-o" aria-hidden="true"></i>
+											<span>Sales Reports</span>
+										</a>
+									</li>
+									<li>
+										<a href="cart.html">
+											<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+											<span>Cart</span>
+										</a>
+									</li>
+									<li>
+										<a href="outstock.html">
+											<i class="fa fa-outdent" aria-hidden="true"></i>
+											<span>Out Of Stock List</span>
+										</a>
+									</li>
+
+									<li>
+										<a href="index.html">
+											<i class="fa fa-power-off" aria-hidden="true"></i>
+											<span>Logout</span>
+										</a>
+									</li>
+									
+								</ul>
+							</nav>
+						</div>
+					
+						<script>
+							// Preserve Scroll Position
+							if (typeof localStorage !== 'undefined') {
+								if (localStorage.getItem('sidebar-left-position') !== null) {
+									var initialPosition = localStorage.getItem('sidebar-left-position'),
+										sidebarLeft = document.querySelector('#sidebar-left .nano-content');
+									
+									sidebarLeft.scrollTop = initialPosition;
+								}
+							}
+						</script>
+				
+					</div>
+				
+				</aside>
+				<!-- end: sidebar -->
+
+				<section role="main" class="content-body">
+					<header class="page-header"  style="top: 0 !important;">
+						<h2>Dashboard</h2>
+						<div class="right-wrapper pull-right visible-xs rightmenu">
+							<div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
+								<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+							</div>
+						</div>
+					</header>
+
+					
+
+					<!-- start: page -->
+					<div class="row">
+						<div class="col-md-6 col-lg-12 col-xl-6">
+							<section class="panel">
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-lg-8">
+											<div class="chart-data-selector" id="salesSelectorWrapper">
+												<h2>
+													Date:
+													
+												</h2>
+												<br />
+												<div  class="input-daterange input-group" data-plugin-datepicker>
+													<span class="input-group-addon">
+														<i class="fa fa-calendar"></i>
+													</span>
+													<input type="text" class="form-control" name="start">
+													<span class="input-group-addon">To</span>
+													<input type="text" class="form-control" name="end">
+												</div>
+					
+												<div id="salesSelectorItems" class="chart-data-selector-items mt-sm">
+													<!-- Flot: Sales Porto Admin -->
+													<div class="chart chart-sm" data-sales-rel="Porto Admin" id="flotDashSales1" class="chart-active"></div>
+													<script>
+					
+														var flotDashSales1Data = [{
+														    data: [
+														        ["Jan", 140],
+														        ["Feb", 240],
+														        ["Mar", 190],
+														        ["Apr", 140],
+														        ["May", 180],
+														        ["Jun", 320],
+														        ["Jul", 270],
+														        ["Aug", 180]
+														    ],
+														    color: "#0088CC"
+														}];
+					
+														// See: assets/javascripts/dashboard/examples.dashboard.js for more settings.
+					
+													</script>
+					
+													
+												</div>
+					
+											</div>
+										</div>
+										<div class="col-lg-4 text-center">
+											<h2 class="panel-title mt-md">Sales Goal</h2>
+											<div class="liquid-meter-wrapper liquid-meter-sm mt-lg">
+												<div class="liquid-meter">
+													<meter min="0" max="100" value="35" id="meterSales"></meter>
+												</div>
+												<div class="liquid-meter-selector" id="meterSalesSel">
+													<a href="#" data-val="35" class="active">Monthly Goal</a>
+													<a href="#" data-val="28">Annual Goal</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+						<div class="col-md-6 col-lg-12 col-xl-6">
+							<div class="row">
+								<div class="col-md-4 col-lg-4col-xl-4">
+									<section class="panel panel-featured-left panel-featured-primary">
+										<div class="panel-body">
+											<div class="widget-summary">
+												<div class="widget-summary-col widget-summary-col-icon">
+													<div class="summary-icon bg-primary">
+														<i class="fa fa-user"></i>
+													</div>
+												</div>
+												<div class="widget-summary-col">
+													<div class="summary">
+														<h4 class="title">Total Customers</h4>
+														<div class="info">
+															<strong class="amount">1281</strong>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</section>
+								</div>
+								<div class="col-md-4 col-lg-4 col-xl-4">
+									<section class="panel panel-featured-left panel-featured-secondary">
+										<div class="panel-body">
+											<div class="widget-summary">
+												<div class="widget-summary-col widget-summary-col-icon">
+													<div class="summary-icon bg-secondary">
+														<i class="fa fa-inr"></i>
+													</div>
+												</div>
+												<div class="widget-summary-col">
+													<div class="summary">
+														<h4 class="title">Total Turnover</h4>
+														<div class="info">
+															<strong class="amount">&#8377; 14,890.30</strong>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</section>
+								</div>
+								<div class="col-md-4 col-lg-4 col-xl-4">
+									<section class="panel panel-featured-left panel-featured-tertiary">
+										<div class="panel-body">
+											<div class="widget-summary">
+												<div class="widget-summary-col widget-summary-col-icon">
+													<div class="summary-icon bg-tertiary">
+														<i class="fa fa-shopping-cart"></i>
+													</div>
+												</div>
+												<div class="widget-summary-col">
+													<div class="summary">
+														<h4 class="title">Total Orders</h4>
+														<div class="info">
+															<strong class="amount">38</strong>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</section>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					
+					<!-- end: page -->
+				</section>
+			</div>
+		</section>
+
+		<!-- Vendor -->
+		<script src="assets/vendor/jquery/jquery.js"></script>		<script src="assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>		<script src="assets/vendor/jquery-cookie/jquery-cookie.js"></script>		<script src="assets/vendor/style-switcher/style.switcher.js"></script>		<script src="assets/vendor/bootstrap/js/bootstrap.js"></script>		<script src="assets/vendor/nanoscroller/nanoscroller.js"></script>		<script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>		<script src="assets/vendor/magnific-popup/jquery.magnific-popup.js"></script>		<script src="assets/vendor/jquery-placeholder/jquery-placeholder.js"></script>
+		
+		<!-- Specific Page Vendor -->		<script src="assets/vendor/jquery-ui/jquery-ui.js"></script>		<script src="assets/vendor/jqueryui-touch-punch/jqueryui-touch-punch.js"></script>		<script src="assets/vendor/jquery-appear/jquery-appear.js"></script>		<script src="assets/vendor/bootstrap-multiselect/bootstrap-multiselect.js"></script>		<script src="assets/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.js"></script>		<script src="assets/vendor/flot/jquery.flot.js"></script>		<script src="assets/vendor/flot.tooltip/flot.tooltip.js"></script>		<script src="assets/vendor/flot/jquery.flot.pie.js"></script>		<script src="assets/vendor/flot/jquery.flot.categories.js"></script>		<script src="assets/vendor/flot/jquery.flot.resize.js"></script>		<script src="assets/vendor/jquery-sparkline/jquery-sparkline.js"></script>		<script src="assets/vendor/raphael/raphael.js"></script>		<script src="assets/vendor/morris.js/morris.js"></script>		<script src="assets/vendor/gauge/gauge.js"></script>		<script src="assets/vendor/snap.svg/snap.svg.js"></script>		<script src="assets/vendor/liquid-meter/liquid.meter.js"></script>		<script src="assets/vendor/jqvmap/jquery.vmap.js"></script>		<script src="assets/vendor/jqvmap/data/jquery.vmap.sampledata.js"></script>		<script src="assets/vendor/jqvmap/maps/jquery.vmap.world.js"></script>		<script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.africa.js"></script>		<script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.asia.js"></script>		<script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.australia.js"></script>		<script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.europe.js"></script>		<script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.north-america.js"></script>		<script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.south-america.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="assets/javascripts/theme.js"></script>
+		
+		<!-- Theme Custom -->
+		<script src="assets/javascripts/theme.custom.js"></script>
+		
+		<!-- Theme Initialization Files -->
+		<script src="assets/javascripts/theme.init.js"></script>
+		<!-- Analytics to Track Preview Website -->		
+		<!-- Examples -->
+		<script src="assets/javascripts/dashboard/examples.dashboard.js"></script>
+	</body>
+
+<!-- Mirrored from preview.oklerthemes.com/porto-admin/1.5.2/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 25 May 2016 07:08:48 GMT -->
+</html>
